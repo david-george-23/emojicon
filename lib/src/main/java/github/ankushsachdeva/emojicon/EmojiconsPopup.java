@@ -161,10 +161,10 @@ public class EmojiconsPopup extends PopupWindow implements ViewPager.OnPageChang
 				int resourceId = mContext.getResources()
 						.getIdentifier("status_bar_height",
 								"dimen", "android");
-				if (resourceId > 0) {
-					heightDifference -= mContext.getResources()
-							.getDimensionPixelSize(resourceId);
-				}
+// 				if (resourceId > 0) {
+// 					heightDifference -= mContext.getResources()
+// 							.getDimensionPixelSize(resourceId);
+// 				}
 				if (heightDifference > 100) {
 					keyBoardHeight = heightDifference;
 					setSize(LayoutParams.MATCH_PARENT, keyBoardHeight);
