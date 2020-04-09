@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 19
+    compileSdkVersion 29
     buildToolsVersion "23.0.2"
 
     defaultConfig {
         applicationId "com.example.emojiconsample"
-        minSdkVersion 8
-        targetSdkVersion 18
+        minSdkVersion 21
+        targetSdkVersion 29
     }
 
     buildTypes {
@@ -20,5 +20,5 @@ android {
 
 dependencies {
     compile project(':lib')
-    compile 'com.android.support:support-v4:19.1.0'
+    compile 'com.android.support:support-v4:28.0.0'
 }
