@@ -187,18 +187,19 @@ public class EmojiconsPopup extends PopupWindow implements ViewPager.OnPageChang
 		});
 	}	
 
-	private int getUsableScreenHeight() {	    
-	    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
-	    	DisplayMetrics metrics = new DisplayMetrics();
+	private int getUsableScreenHeight() {	
+	    return rootView.getRootView().getHeight();
+// 	    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
+// 	    	DisplayMetrics metrics = new DisplayMetrics();
 	    	
-	    	WindowManager windowManager = (WindowManager) mContext.getSystemService(Context.WINDOW_SERVICE);
-	        windowManager.getDefaultDisplay().getMetrics(metrics);	 
+// 	    	WindowManager windowManager = (WindowManager) mContext.getSystemService(Context.WINDOW_SERVICE);
+// 	        windowManager.getDefaultDisplay().getMetrics(metrics);	 
 	        
-	        return metrics.heightPixels;
+// 	        return metrics.heightPixels;
 	        
-	    } else {
-	    	return rootView.getRootView().getHeight();
-	    }
+// 	    } else {
+// 	    	return rootView.getRootView().getHeight();
+// 	    }
 	}
 
 	/**
